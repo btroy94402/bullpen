@@ -8,3 +8,8 @@ It's contents include:
 	This function is a template for how to define arguments to pass to a python script, as well as
 	how to make some optional, and to pass variable numbers of arguments to the main call and into the
 	script execution.
+	
+  3) master_caller directory contains caller.py and master.py
+		They exist as a simple template examle of one script calling another.
+		master has a function that computes a factorial.  caller just calls the master script.
+		

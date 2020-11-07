@@ -13,3 +13,9 @@ It's contents include:
 		They exist as a simple template examle of one script calling another.
 		master has a function that computes a factorial.  caller just calls the master script.
 		
+   4) fractal.py
+		Script takes no arguments.  It contains two functions (rgb_conv(iterator) and (mandelbrot()).  
+		The former converts pixel values based on an iterator in the mandelbrot function.
+		The later takes x & y pixel coordinates and generates a corresponding complex number
+		using numpy.complex().  The script will iterate over a range of 1000 (step 1) and the final output is an image of the mandelbrot fractal both displayed and
+		saved to the current directory ("mandelbrot.png").

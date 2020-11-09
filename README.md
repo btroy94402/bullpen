@@ -19,3 +19,9 @@ It's contents include:
 		The later takes x & y pixel coordinates and generates a corresponding complex number
 		using numpy.complex().  The script will iterate over a range of 1000 (step 1) and the final output is an image of the mandelbrot fractal both displayed and
 		saved to the current directory ("mandelbrot.png").
+		
+	5) opencv_videostream.py
+		Simple use of the python cv2 modele to stream your webcam.  Video is 
+		imported as RGB numpy array and displayed realtime in a while loop.  Image feed can
+		be converted to grayscale (see comments).  Press q to close the loop
+		and the video stream.

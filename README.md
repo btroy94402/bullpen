@@ -25,3 +25,9 @@ It's contents include:
 		imported as RGB numpy array and displayed realtime in a while loop.  Image feed can
 		be converted to grayscale (see comments).  Press q to close the loop
 		and the video stream.
+		
+	6) watchdog.py
+		A script that uses the python 'watchdog' sweeper package to monitor a directory (watchdog.observers)
+		for creations, modifications, or deletions, and takes a user specified action watchdog.events.  The
+		script is simple and easy for user modification to tailor to a specific use case.  After modifying, just launch the
+		script and let it run.

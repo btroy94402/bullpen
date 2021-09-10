@@ -1,5 +1,9 @@
 ### Written by Brian Troy July 7, 2021 (bitroy@yahoo.com)
 
+### scrapes job listings from indeed.com for the seatch terms 'data engineer', 'data scientist', 'data wafer', & 'python vba'
+### writes each search into it's own result csv.
+### Results include Title, Company, Location, Days posted, Salary, and a Summary.
+
 def extract(page, my_url):
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
     url=f"{my_url}{page}"

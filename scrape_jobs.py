@@ -1,9 +1,5 @@
 ### Written by Brian Troy July 7, 2021 (bitroy@yahoo.com)
 
-### scrapes job listings from indeed.com for the seatch terms 'data engineer', 'data scientist', 'data wafer', & 'python vba'
-### writes each search into it's own result csv.
-### Results include Title, Company, Location, Days posted, Salary, and a Summary.
-
 def extract(page, my_url):
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
     url=f"{my_url}{page}"
@@ -44,18 +40,18 @@ if __name__ == "__main__":
 	import pandas as pd
 	from datetime import date
 
-	url_data_engineer = 'https://www.indeed.com/jobs?q=data%20engineer&l=san%20mateo%2C%20ca&start='
+	url_wafer_data_inspection = 'https://www.indeed.com/jobs?q=wafer%20inspection%20data%20metrology&l=san%20mateo%2C%20ca&start='
 	url_data_science = 'https://www.indeed.com/jobs?q=data%20scientist&l=San%20Mateo%2C%20CA&start='
 	url_data_wafer = 'https://www.indeed.com/jobs?q=data%20wafer&l=san%20mateo%2C%20ca&start='
 	url_python_vba = 'https://www.indeed.com/jobs?q=Python%20Vba&l=San%20Mateo%2C%20CA&start='
 
 	urls = []
-	urls.append(url_data_engineer)
+	urls.append(url_wafer_data_inspection)
 	urls.append(url_data_science)
 	urls.append(url_data_wafer)
 	urls.append(url_python_vba)
 
-	names=["data_engineer_jobs_","data_science_jobs_","data_wafer_jobs_","python_vba_jobs_"]
+	names=["wafer_data_inspection_jobs_","data_science_jobs_","data_wafer_jobs_","python_vba_jobs_"]
 
 	for j in range(len(urls)):
 		joblist = []

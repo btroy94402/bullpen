@@ -44,14 +44,17 @@ if __name__ == "__main__":
 	url_data_science = 'https://www.indeed.com/jobs?q=data%20scientist&l=San%20Mateo%2C%20CA&start='
 	url_data_wafer = 'https://www.indeed.com/jobs?q=data%20wafer&l=san%20mateo%2C%20ca&start='
 	url_python_vba = 'https://www.indeed.com/jobs?q=Python%20Vba&l=San%20Mateo%2C%20CA&start='
+	url_wafer_process_data = 'https://www.indeed.com/jobs?q=wafer%20process%20data&l=san%20mateo%2C%20ca&start='
+	url_python_developer = 'https://www.indeed.com/jobs?q=python%20developer&l=san%20mateo%2C%20ca&start='
+	url_wafer_defect = 'https://www.indeed.com/jobs?q=wafer%20defect&l=san%20mateo%2C%20ca&start='
 
 	urls = []
 	urls.append(url_wafer_data_inspection)
 	urls.append(url_data_science)
 	urls.append(url_data_wafer)
 	urls.append(url_python_vba)
-
-	names=["wafer_data_inspection_jobs_","data_science_jobs_","data_wafer_jobs_","python_vba_jobs_"]
+	urls.append(url_wafer_process_data)
+	urls.append(url_python_developer)
 
 	for j in range(len(urls)):
 		joblist = []
@@ -60,6 +63,8 @@ if __name__ == "__main__":
 			c = extract(i,urls[j])
 			transform(c)
 		df = pd.DataFrame(joblist)
-
-		df.to_csv(f'C:\\Users\\bitro\\Desktop\\web_scrape_jobs\\Job_Listings\\{names[j]}{date.today()}.csv',index=False)
-		print('Done')
+		if j == 0:
+			df.to_csv(f'C:\\Users\\bitro\\Desktop\\web_scrape_jobs\\Job_Listings\\jobs_{date.today()}.csv',index=False)
+		elif j > 0:
+			df.to_csv(f'C:\\Users\\bitro\\Desktop\\web_scrape_jobs\\Job_Listings\\jobs_{date.today()}.csv', mode='a', header=False, index = False)
+	print('Done')

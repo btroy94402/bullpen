@@ -39,7 +39,6 @@ if __name__ == "__main__":
 	from bs4 import BeautifulSoup
 	import pandas as pd
 	from datetime import date
-
 	url_wafer_data_inspection = 'https://www.indeed.com/jobs?q=wafer%20inspection%20data%20metrology&l=san%20mateo%2C%20ca&start='
 	url_data_science = 'https://www.indeed.com/jobs?q=data%20scientist&l=San%20Mateo%2C%20CA&start='
 	url_data_wafer = 'https://www.indeed.com/jobs?q=data%20wafer&l=san%20mateo%2C%20ca&start='
@@ -47,7 +46,8 @@ if __name__ == "__main__":
 	url_wafer_process_data = 'https://www.indeed.com/jobs?q=wafer%20process%20data&l=san%20mateo%2C%20ca&start='
 	url_python_developer = 'https://www.indeed.com/jobs?q=python%20developer&l=san%20mateo%2C%20ca&start='
 	url_wafer_defect = 'https://www.indeed.com/jobs?q=wafer%20defect&l=san%20mateo%2C%20ca&start='
-
+	url_wafer_metrology_inspection = 'https://www.indeed.com/jobs?q=wafer%20metrology%20inspection&l=san%20mateo&start='
+	
 	urls = []
 	urls.append(url_wafer_data_inspection)
 	urls.append(url_data_science)
@@ -55,6 +55,8 @@ if __name__ == "__main__":
 	urls.append(url_python_vba)
 	urls.append(url_wafer_process_data)
 	urls.append(url_python_developer)
+	urls.append(url_wafer_defect)
+	urls.append(url_wafer_metrology_inspection)
 
 	for j in range(len(urls)):
 		joblist = []

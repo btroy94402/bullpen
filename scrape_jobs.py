@@ -48,6 +48,8 @@ if __name__ == "__main__":
 	url_python_developer = 'https://www.indeed.com/jobs?q=python%20developer&l=san%20mateo%2C%20ca&start='
 	url_wafer_defect = 'https://www.indeed.com/jobs?q=wafer%20defect&l=san%20mateo%2C%20ca&start='
 	url_wafer_metrology_inspection = 'https://www.indeed.com/jobs?q=wafer%20metrology%20inspection&l=san%20mateo&start='
+	url_tensorflow_keras = "https://www.indeed.com/jobs?q=tensorflow_keras&l=san%20mateo&start="
+	
 	urls = []
 	urls.append(url_wafer_data_inspection)
 	urls.append(url_data_science)
@@ -57,6 +59,7 @@ if __name__ == "__main__":
 	urls.append(url_python_developer)
 	urls.append(url_wafer_defect)
 	urls.append(url_wafer_metrology_inspection)
+	urls.append(url_tensorflow_keras)
 
 	for j in range(len(urls)):
 		joblist = []
